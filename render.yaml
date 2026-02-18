@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: adrian-tv-alerts
+    env: node
+    plan: starter
+    buildCommand: npm install && npx playwright install --with-deps chromium
+    startCommand: npm start
